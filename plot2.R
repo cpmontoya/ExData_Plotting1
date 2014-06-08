@@ -13,6 +13,9 @@ power<-power[power$Date=="1/2/2007"|power$Date=="2/2/2007",]
 
 png(file="plot2.png",width=480,height=480)
 
+## convert Date and Time to 
+x<-strptime(paste(power$Date,power$Time),"%d/%m/%Y %H:%M:%S")
+
 plot(x,power$Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)")
 
 ##close png file

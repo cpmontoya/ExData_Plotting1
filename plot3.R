@@ -13,6 +13,9 @@ power<-power[power$Date=="1/2/2007"|power$Date=="2/2/2007",]
 
 png(file="plot3.png",width=480,height=480)
 
+## convert Date and Time to 
+x<-strptime(paste(power$Date,power$Time),"%d/%m/%Y %H:%M:%S")
+
 plot(x,power$Sub_metering_1,type="l",xlab="",ylab="Energy Sub metering")
 lines(x,power$Sub_metering_2,col="red")
 lines(x,power$Sub_metering_3,col="blue")
