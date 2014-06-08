@@ -3,7 +3,7 @@
 ## UC Irvine Machine Learning Repository   http://archive.ics.uci.edu/ml/
 ## the link to download the file used below is 
 ## https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
-## The histogram is created as a 480 by 480 png file "plot1.png" 
+## The histogram is created as a 480 by 480 png file "plot3.png" 
 
 ## read data from local file into data.frame
 power<-read.table("household_power_consumption.txt",sep=";",na.strings="?",header=TRUE)
